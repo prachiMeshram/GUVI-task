@@ -1,0 +1,90 @@
+body {
+    background-color: #F6F6F9;
+}
+.container {
+    background-color: #FFFFFF;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0px;
+    margin-bottom: 20px;
+
+    .banner-pic {
+        display: flex;
+        flex-direction: column;
+
+        .banner {
+            height: 70px;
+            background-color: #025943;
+            border-radius: 5px;
+        }
+
+        .profile-logout {
+            margin: -35px 20px 0px 20px;
+            
+            display: flex;
+            justify-content: space-between;
+
+            .hover-tip {
+                visibility: hidden; // ISSUE
+            }
+
+            .img-container {
+                width: 75px;
+                height: 75px;
+                border-radius: 100%;
+                background-color: white;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &.logout-img{
+                    width: 40px;
+                    height: 40px;
+                    margin-top: 20px;
+                    cursor: pointer;
+                }
+
+                .logout{
+                    height: 50%;
+                }
+            }
+
+            
+        }
+        
+    }
+    
+    .welcome-header {
+        text-align: center;
+    }
+    
+    .form-container {
+        padding: 20px;
+
+        .labels {
+            color: #999999;
+        } 
+    
+        .form-control:focus {
+            border: 3px solid #0DBA4B;
+            outline: none 0;
+            outline-color: red;
+            outline-width: 0px;
+        }
+    
+        .signup-link {
+            text-align: center;
+            color: #95A4C6;
+            text-decoration: none;
+        }
+    
+        .btn {
+            background-color: #0DBA4B;
+            color: white;
+        }
+    }
+    
+}

@@ -1,0 +1,43 @@
+body {
+    background-color: #F6F6F9;
+}
+.container {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+
+    .form-container {
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        padding:10px 20px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+
+    .welcome-header {
+        text-align: center;
+    }
+    
+    .labels {
+        color: #999999;
+    } 
+
+    .form-control:focus {
+        border: 3px solid #0DBA4B;
+        outline: none 0;
+        outline-color: red;
+        outline-width: 0px;
+    }
+
+    .signup-link {
+        text-align: center;
+        color: #95A4C6;
+        text-decoration: none;
+    }
+
+    .btn {
+        background-color: #0DBA4B;
+        color: white;
+    }
+}

@@ -1,0 +1,74 @@
+body {
+  background-color: #F6F6F9;
+}
+
+.container {
+  background-color: #FFFFFF;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.container .banner-pic {
+  display: flex;
+  flex-direction: column;
+}
+.container .banner-pic .banner {
+  height: 70px;
+  background-color: #025943;
+  border-radius: 5px;
+}
+.container .banner-pic .profile-logout {
+  margin: -35px 20px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .banner-pic .profile-logout .hover-tip {
+  visibility: hidden;
+}
+.container .banner-pic .profile-logout .img-container {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .banner-pic .profile-logout .img-container.logout-img {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.container .banner-pic .profile-logout .img-container .logout {
+  height: 50%;
+}
+.container .welcome-header {
+  text-align: center;
+}
+.container .form-container {
+  padding: 20px;
+}
+.container .form-container .labels {
+  color: #999999;
+}
+.container .form-container .form-control:focus {
+  border: 3px solid #0DBA4B;
+  outline: none 0;
+  outline-color: red;
+  outline-width: 0px;
+}
+.container .form-container .signup-link {
+  text-align: center;
+  color: #95A4C6;
+  text-decoration: none;
+}
+.container .form-container .btn {
+  background-color: #0DBA4B;
+  color: white;
+}/*# sourceMappingURL=profile.css.map */
