@@ -38,6 +38,7 @@ module.exports.updateProfile = async (req, res) => {
         address: req.body.address,
         city: req.body.city,
         state: req.body.state,
+        userId: req.body.userId
       },
     });
     return res.status(200).send({
