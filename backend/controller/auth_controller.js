@@ -71,7 +71,7 @@ module.exports.login = async (req, res) => {
       });
     }
     return res.status(404).send({
-      message: "user not found",
+      message: "User not found",
     });
   } catch (err) {
     throw new Error(err);

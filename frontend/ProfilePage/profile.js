@@ -15,12 +15,9 @@ $(document).ready(function () {
     fetch("http://localhost:8000/auth/addprofile", {
       method: "POST",
       headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type",
         "Content-type": "application/json",
-        "Access-Control-Allow-Credentials": true,
       },
-      body: formData,
+      body: JSON.stringify(formData),
     })
       .then((response) => response.json())
       .then((data) => {

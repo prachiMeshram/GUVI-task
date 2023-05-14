@@ -1,4 +1,4 @@
-$(documet).ready(function () {
+$(document).ready(function () {
   $("#login-form").submit(function (event) {
     var formData = {
       email: $("#email").val(),
@@ -8,12 +8,9 @@ $(documet).ready(function () {
     fetch("http://localhost:8000/auth/login", {
       method: "GET",
       headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type",
         "Content-type": "application/json",
-        "Access-Control-Allow-Credentials": true,
       },
-      body: formData,
+      body: JSON.stringify(formData),
     })
       .then((response) => response.json())
       .then((data) => {
